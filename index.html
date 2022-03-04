@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-brand">
+          <div class="description">
+            <button></button>
+          </div>
+          <div class="description">
+            <p class="description-name">Oluwatomiwa Oladele</p>
+            <p class="description-job">Developer</p>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-button"
+          id="hamburger-button"
+          onclick="toggleNavigation()"
+        >
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+        </button>
+
+        <div class="about-me" id="about-me">
+          <a href="index.html">Home</a>
+          <hr class="nav" />
+          <a href="#">Resume</a>
+          <hr class="nav" />
+          <a href="github.com/ladhenrytom">Projects</a>
+          <hr class="nav" />
+          <a href="index2.html">Contact</a>
+        </div>
+      </nav>
+
+      <section>
+        <div class="photo">
+          <img src="tomiwa.JPG" alt="tomiwa's photo" class="center" />
+        </div>
+        <div class="bio">
+          <div class="hello">Hello!</div>
+          <div class="about-me_short">
+            <h4>A Bit About Me</h4>
+            <p>
+              My name is Tomiwa. I develop exciting interfaces with HTML, CSS3,
+              and JavaScript. I love making beautiful and amazing web
+              applications as much as I love hommade fried plantain!
+            </p>
+          </div>
+          <div class="bio-buttons">
+            <button class="bio-button grey">Resume</button>
+            <button class="bio-button chocolate">Projects</button>
+            <button class="bio-button burlywood">Contact</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <hr class="footer-border" />
+        <div class="footer">
+          <div class="follow-me_container">
+            <div class="follow-me">Follow me</div>
+            <div class="socials">
+              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-youtube-play"></i>
+              <i class="fa fa-twitter-square"></i>
+              <i class="fa fa-linkedin-square"></i>
+            </div>
+          </div>
+          <div class="watermark">
+            <p>
+              <a href="github.com/ladhenrytom">@ladhenrytom</a>
+              &copy; 2021
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const toggle = (elementId) => {
+        const element = document.getElementById(elementId);
+
+        if (element.classList.contains(elementId + "--open")) {
+          element.classList.remove(elementId + "--open");
+        } else {
+          element.classList.add(elementId + "--open");
+        }
+      };
+
+      const toggleNavigation = () => {
+        toggle("about-me");
+        toggle("hamburger-button");
+      };
+    </script>
+  </body>
+</html>

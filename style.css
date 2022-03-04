@@ -1,0 +1,805 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background: rgb(235, 233, 233);
+    height: 100vh;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 40px;
+}
+nav{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav-brand{
+    margin: 0;
+    padding-left: 24px;
+    display: flex;
+    grid-column: 1/2;
+}
+.description{
+    padding: 0 6px;
+    display: flex;
+}
+.description-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 4.5px;
+    padding-right: 12px;
+}
+.description-job{
+    padding-top: 16px;
+}
+.description button{
+    margin-top: 26px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: rgb(146, 129, 129);
+    border: none;
+}
+.hamburger-button{
+    display: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 10;
+}
+.hamburger-button__bar{
+    width: 22px;
+    height: 3px;
+    background: #222;
+    margin-top: 4px;
+    border-radius: 2px;
+    transform-origin: 21px;
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
+}
+.hamburger-button__bar:nth-child(1){
+    margin-top: 0;
+}
+.hamburger-button--open .hamburger-button__bar:nth-child(1){
+    transform: rotate(-45deg);
+}
+.hamburger-button--open .hamburger-button__bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger-button--open .hamburger-button__bar:nth-child(3){
+    transform: rotate(45deg);
+}
+.about-me{
+    padding: 16px 24px;
+    display: flex;
+    grid-column: 8/12;
+}
+.about-me--open{
+    transform: translateX(-100%);
+}
+.about-me a{
+    font-size: 16px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+.about-me a:focus{
+    color: black;
+    font-weight: 900;
+}
+.about-me a:active{
+    color: black;
+    font-weight: 900;
+}
+.about-me a:hover{
+    color: black;
+    font-weight: 900;
+}
+hr.nav{
+    margin-top: 12px;
+    height: 24px;
+}
+section{
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+}
+.photo{
+    margin-top: 40px;
+    padding-right: 24px;
+}
+.photo img{
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    object-fit: cover;
+    animation: fadein 2.5s ease-in forwards;
+}
+.bio{
+    margin-top: 80px;
+}
+.hello{
+    font-family:  Helvetica, sans-serif;
+    font-size: 40px; 
+    font-weight: 700;
+    animation: fadein 2.5s ease-in forwards;
+}
+.about-me_short{
+    text-align: justify;
+    animation: fadein 2.5s ease-in forwards;
+}
+.about-me_short h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+.bio-buttons{
+    display: flex;
+}
+.bio-button{
+    padding: 8px;
+    color: #222;
+    margin-right: 16px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    transition: ease-in-out 200ms;
+}
+.bio-button:hover{
+    background: rgb(235, 233, 233);
+    font-size: 16px;
+}
+.grey{
+    background: grey;
+    animation: fadein1 2.5s ease-in forwards;
+}
+.chocolate{
+    background: chocolate;
+    animation: fadein 3s ease-in-out forwards;
+}
+.burlywood{
+    background: burlywood;
+    animation: fadein 3.5s ease-in forwards;
+}
+footer{
+    width: 100vw;
+}
+hr.footer-border{
+    width: 95vw;
+    height: 0;
+}
+.footer{
+    display: flex;
+    width: 95vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.footer a{
+    text-decoration: none;
+    color: #222;
+}
+.follow-me_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.follow-me{
+    font-size: 16px;
+    padding-right: 16px;
+}
+.socials{
+    font-size: 16px;
+    color: #222;
+}
+.fa{
+   padding-right: 12px;
+}
+.watermark{
+    font-size: 16px;
+}
+.watermark a{
+    padding-right: 8px;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        margin-top: 24px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+@keyframes fadein1 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+@media only screen and (max-width:1024px) {
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 280px;
+    }
+    nav{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-brand{
+        margin: 0;
+        padding-left: 24px;
+        display: flex;
+        grid-column: 1/3;
+    }
+    .description{
+        padding: 4px;
+    }
+    .description-name{
+        padding: 0;
+        padding-top: 4px;
+        padding-right: 6px;
+        font-size: 16px;
+    }
+    .description-job{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .description button{
+        margin-top: 21px;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+    }
+    .hamburger-button{
+        display: none;
+    }
+    .about-me_short{
+        text-align: center;
+    }
+
+    section{
+        display: block;
+        max-width: 60vw;
+        margin: 0 auto;
+    }
+    .photo{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .center{
+        display: block;
+        margin: 0 auto;
+    }
+    .photo img{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        object-fit: cover;
+    }
+    .bio{
+        text-align: center;
+        margin: 12px 0;
+    }
+    .bio-buttons{
+        justify-content: space-around;
+    }
+    .bio-button{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+    footer{
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 24px;
+    }
+    .follow-me_container{
+        display: flex;
+    }
+    .follow-me{
+        font-size: 12px;
+        color: #222;
+    }
+    .socials{
+        font-size: 12px;
+        color: #222;
+    }
+    .fa{
+       padding-right: 6px;
+    }
+    .watermark{
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    .watermark a{
+        padding-right: 8px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 120px;
+    }
+    nav{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-brand{
+        margin: 0;
+        padding-left: 24px;
+        display: flex;
+        grid-column: 1/3;
+    }
+    .description{
+        padding: 4px;
+    }
+    .description-name{
+        padding: 0;
+        padding-top: 4px;
+        padding-right: 6px;
+        font-size: 16px;
+    }
+    .description-job{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .description button{
+        margin-top: 21px;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+    }
+    .hamburger-button{
+        display: block;
+        background: rgb(235, 233, 233);
+        padding: 4px 20px;
+    }
+    .about-me{
+        display: block;
+        position: fixed;
+        top: 24px;
+        right: -70vw;
+        height: 100vh;
+        width: 70vw;
+        z-index: 2;
+        background: rgb(235, 233, 233);
+        padding: 70px;
+        transition: transform 0.4s ease-in-out;
+    }
+    .about-me a{
+        font-size: 40px;
+    }
+    .about-me--open{
+        transform: translateX(-100%);
+        background: rgb(235, 233, 233);
+        padding: 70px;
+    }
+    .about-me--open a{
+        font-size: 40px;
+    }
+    hr.nav{
+        margin-top: 4px;
+        height: 0px;
+    }
+    .about-me_short{
+        text-align: center;
+    }
+
+    section{
+        display: block;
+        max-width: 60vw;
+        margin: 0 auto;
+    }
+    .photo{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .center{
+        display: block;
+        margin: 0 auto;
+    }
+    .photo img{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        object-fit: cover;
+    }
+    .bio{
+        text-align: center;
+        margin: 12px 0;
+    }
+    .bio-buttons{
+        justify-content: space-around;
+    }
+    .bio-button{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+    footer{
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 24px;
+    }
+    .follow-me_container{
+        display: flex;
+    }
+    .follow-me{
+        font-size: 12px;
+        color: #222;
+    }
+    .socials{
+        font-size: 12px;
+        color: #222;
+    }
+    .fa{
+       padding-right: 6px;
+    }
+    .watermark{
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    .watermark a{
+        padding-right: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:414px) {
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 4px;
+    }
+    nav{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-brand{
+        margin: 0;
+        padding-left: 24px;
+        display: flex;
+        grid-column: 1/3;
+    }
+    .description{
+        padding: 4px;
+    }
+    .description-name{
+        padding: 0;
+        padding-top: 4px;
+        padding-right: 6px;
+        font-size: 16px;
+    }
+    .description-job{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .description button{
+        margin-top: 21px;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+    }
+    .hamburger-button{
+        display: block;
+        background: rgb(235, 233, 233);
+        padding: 4px 20px;
+    }
+    .about-me{
+        display: block;
+        position: fixed;
+        top: 24px;
+        right: -70vw;
+        height: 100vh;
+        width: 70vw;
+        z-index: 2;
+        background: rgb(235, 233, 233);
+        padding: 40px;
+        transition: transform 0.4s ease-in-out;
+    }
+    .about-me a{
+        font-size: 22px;
+    }
+    .about-me--open{
+        background: rgb(235, 233, 233);
+        transform: translateX(-100%);
+        padding: 40px;
+    }
+    .about-me--open a{
+        font-size: 22px;
+    }
+    hr.nav{
+        margin-top: 4px;
+        height: 0px;
+    }
+    .about-me_short{
+        text-align: center;
+    }
+
+    section{
+        display: block;
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    .photo{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .center{
+        display: block;
+        margin: 0 auto;
+    }
+    .photo img{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        object-fit: cover;
+    }
+    .bio{
+        text-align: center;
+        margin: 12px 0;
+    }
+    .bio-buttons{
+        justify-content: space-around;
+    }
+    .bio-button{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+    footer{
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 12px;
+    }
+    .follow-me_container{
+        display: flex;
+    }
+    .follow-me{
+        font-size: 12px;
+        color: #222;
+    }
+    .socials{
+        font-size: 12px;
+        color: #222;
+    }
+    .fa{
+       padding-right: 6px;
+    }
+    .watermark{
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    .watermark a{
+        padding-right: 8px;
+    }
+}
+
+
+
+@media only screen and (max-width:320px) {
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 4px;
+    }
+    nav{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-brand{
+        margin: 0;
+        padding-left: 24px;
+        display: flex;
+        grid-column: 1/3;
+    }
+    .description{
+        padding: 4px;
+    }
+    .description-name{
+        padding: 0;
+        padding-top: 4px;
+        padding-right: 6px;
+        font-size: 16px;
+    }
+    .description-job{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .description button{
+        margin-top: 21px;
+        height: 16px;
+        width: 16px;
+        border-radius: 8px;
+    }
+    .hamburger-button{
+        display: block;
+        background: rgb(235, 233, 233);
+        padding: 4px 20px;
+    }
+    .about-me{
+        display: block;
+        position: fixed;
+        top: 24px;
+        right: -100vw;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+        background: rgb(235, 233, 233);
+        padding-top: 80px;
+        transition: transform 0.4s ease-in-out;
+    }
+    .about-me a{
+        font-size: 12px;
+    }
+    .about-me--open{
+        transform: translateX(-100%);
+        background: rgb(235, 233, 233);
+        padding-top: 80px;
+    }
+    .about-me--open a{
+        margin: auto auto;
+        font-size: 12px;
+    }
+    hr.nav{
+        margin-top: 4px;
+        height: 0px;
+    }
+    .about-me_short{
+        text-align: center;
+    }
+
+    section{
+        display: block;
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    .photo{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .center{
+        display: block;
+        margin: 0 auto;
+    }
+    .photo img{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        object-fit: cover;
+    }
+    .bio{
+        text-align: center;
+        margin: 12px 0;
+    }
+    .bio-buttons{
+        justify-content: space-around;
+    }
+    .bio-button{
+        width: 70px;
+        height: 70px;
+        border-radius: 35px;
+    }
+    footer{
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 12px;
+    }
+    .follow-me_container{
+        display: flex;
+    }
+    .follow-me{
+        font-size: 12px;
+        color: #222;
+    }
+    .socials{
+        font-size: 12px;
+        color: #222;
+    }
+    .fa{
+       padding-right: 6px;
+    }
+    .watermark{
+        font-size: 12px;
+        padding: 0 2px;
+    }
+    .watermark a{
+        padding-right: 8px;
+    }
+}
