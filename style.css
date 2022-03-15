@@ -868,18 +868,18 @@ hr.footer-border {
   }
   .hidden {
     display: block;
-    padding: 24px 10vw;
+    padding: 24px;
   }
   .card {
-    width: 80vw;
-    margin-bottom: 24px;
+    width: 70vw;
+    margin-bottom: 36px;
   }
   .card-img {
-    width: 50vw;
+    width: 40vw;
   }
   .project-btn {
-    margin-top: 240px;
-    width: 60vw;
+    margin-top: 200px;
+    width: 50vw;
   }
   footer {
     margin: 0 auto;
