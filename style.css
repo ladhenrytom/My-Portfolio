@@ -866,6 +866,21 @@ hr.footer-border {
     height: 70px;
     border-radius: 35px;
   }
+  .hidden {
+    display: block;
+    padding: 24px 10vw;
+  }
+  .card {
+    width: 80vw;
+    margin-bottom: 24px;
+  }
+  .card-img {
+    width: 50vw;
+  }
+  .project-btn {
+    margin-top: 240px;
+    width: 60vw;
+  }
   footer {
     margin: 0 auto;
     padding: 0;
