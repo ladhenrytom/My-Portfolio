@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-brand">
+          <div class="description">
+            <button></button>
+          </div>
+          <div class="description">
+            <p class="description-name">Oluwatomiwa Oladele</p>
+            <p class="description-job">Developer</p>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-button"
+          id="hamburger-button"
+          onclick="toggleNavigation()"
+        >
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+          <div class="hamburger-button__bar"></div>
+        </button>
+
+        <div class="about-me" id="about-me">
+          <a href="index.html">Home</a>
+          <hr class="nav" />
+          <a href="#">Resume</a>
+          <hr class="nav" />
+          <a class="projects" href="#projects">Projects</a>
+          <hr class="nav" />
+          <a href="#" class="contact-link">Contact</a>
+        </div>
+      </nav>
+
+      <section class="main">
+        <div class="photo">
+          <img src="tomiwa.JPG" alt="tomiwa's photo" class="center" />
+        </div>
+        <div class="bio">
+          <div class="hello">Hello!</div>
+          <div class="about-me_short">
+            <h4>A Bit About Me</h4>
+            <p>
+              My name is Tomiwa. I develop exciting interfaces with HTML, CSS3,
+              and JavaScript. I love making beautiful and amazing web
+              applications as much as I love hommade fried plantain!
+            </p>
+          </div>
+          <div class="bio-buttons">
+            <button class="bio-button grey">Resume</button>
+            <button class="bio-button chocolate">Projects</button>
+            <button class="bio-button burlywood">Contact</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact hidden--div">
+        <div class="contact-photo">
+          <img src="tomiwa.JPG" alt="tomiwa's photo" class="center" />
+        </div>
+        <div class="info">
+          <div class="name">
+            <p class="bold">NAME</p>
+            <p>OLUWATOMIWA SEMILORE OLADELE</p>
+          </div>
+          <div class="phone">
+            <p class="bold">PHONE</p>
+            <p>+234 806 837 5081</p>
+          </div>
+          <div class="email">
+            <p class="bold">EMAIL</p>
+            <p>tomiwasemilore@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="hidden-div hidden--div" id="#projects">
+        <h1 class="center-text">PROJECTS</h1>
+        <section class="hidden">
+          <div class="card skill-learning">
+            <img src="skill-learning.png" alt="" class="card-img" />
+            <div class="overlay"></div>
+            <a href="https://skill-learning.netlify.app"
+              ><button class="project-btn">Skill Learning &rarr;</button></a
+            >
+          </div>
+
+          <div class="card english-learning">
+            <img src="english-learning.png" alt="" class="card-img" />
+            <a href="english-learning-starter.netlify.app"
+              ><button class="project-btn">English Learning &rarr;</button></a
+            >
+          </div>
+
+          <div class="card perfect-favor">
+            <img src="perfect-favor.png" alt="" class="card-img" />
+            <a href="https://perfect-favor-np-schl.netlify.app"
+              ><button class="project-btn">Perfect Favor &rarr;</button></a
+            >
+          </div>
+
+          <div class="card card-game">
+            <img src="card-game.png" alt="" class="card-img" />
+            <a href="card-game-starter.netlify.app"
+              ><button class="project-btn">Card game &rarr;</button></a
+            >
+          </div>
+
+          <div class="card guess-number">
+            <img src="guess-number.png" alt="" class="card-img" />
+            <a href="guess-my-number-game-starter.netlify.app"
+              ><button class="project-btn">Pig game &rarr;</button></a
+            >
+          </div>
+
+          <div class="card behold-starter">
+            <img src="behold-starter.png" alt="" class="card-img" />
+            <a href="https://behold-starter.netlify.app"
+              ><button class="project-btn">Sample form &rarr;</button></a
+            >
+          </div>
+
+          <div class="card collab-starter">
+            <img src="collab.png" alt="" class="card-img" />
+            <a href="https://collab-starter.netlify.app"
+              ><button class="project-btn">Collab &rarr;</button></a
+            >
+          </div>
+
+          <div class="card highmos-starter">
+            <img src="highmos.png" alt="" class="card-img" />
+            <a href="https://highmos-starter.netlify.app"
+              ><button class="project-btn">Highmos &rarr;</button></a
+            >
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <hr class="footer-border" />
+        <div class="footer">
+          <div class="follow-me_container">
+            <div class="follow-me">Follow me</div>
+            <div class="socials">
+              <a href="facebook.com/oluwatomiwa-oladele"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+              <a href="youtube.com/oladhenry"
+                ><i class="fa fa-youtube-play"></i
+              ></a>
+              <a href="twitter.com/tomsexyne"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+              <a href="LinkedIn.com/ladhenrytom"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="watermark">
+            <p>
+              <a href="https://tomiwa-portfolio.netlify.app">@ladhenrytom</a>
+              &copy; 2021
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
