@@ -840,6 +840,9 @@ hr.footer-border {
     max-width: 70vw;
     margin: 0 auto;
   }
+  .main{
+    display: block;
+  }
   .photo {
     margin: 0 auto;
     padding: 0;
