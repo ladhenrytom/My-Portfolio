@@ -884,16 +884,16 @@ hr.footer-border {
     padding: 4px;
   }
   .card {
-    padding: 6px;
+    padding: 10px;
     width: 70vw;
     margin-bottom: 36px;
   }
   .card-img {
     width: 40vw;
-    height: 15vh;
+    height: 20vh;
   }
   .project-btn {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 40vw;
   }
   footer {
