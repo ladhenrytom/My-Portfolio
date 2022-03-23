@@ -518,6 +518,11 @@ hr.footer-border {
     max-width: 60vw;
     margin: 0 auto;
   }
+  .main {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
   .photo {
     margin: 0 auto;
     padding: 0;
@@ -680,6 +685,11 @@ hr.footer-border {
     max-width: 70vw;
     margin: 0 auto;
   }
+  .main {
+  width: 60vw;
+  display: block;
+  margin: 0 auto;
+}
   .photo {
     margin: 0 auto;
     padding: 0;
