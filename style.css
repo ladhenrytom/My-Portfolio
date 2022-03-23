@@ -881,7 +881,7 @@ hr.footer-border {
   }
   .hidden {
     display: block;
-    padding: 12px;
+    padding: 4px;
   }
   .card {
     width: 70vw;
@@ -891,7 +891,7 @@ hr.footer-border {
     width: 40vw;
   }
   .project-btn {
-    margin-top: 180px;
+    margin-top: 150px;
     width: 40vw;
   }
   footer {
