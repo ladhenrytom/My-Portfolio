@@ -889,9 +889,10 @@ hr.footer-border {
   }
   .card-img {
     width: 40vw;
+    height: 15vh;
   }
   .project-btn {
-    margin-top: 100px;
+    margin-top: 150px;
     width: 40vw;
   }
   footer {
