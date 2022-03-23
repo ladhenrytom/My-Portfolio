@@ -884,6 +884,7 @@ hr.footer-border {
     padding: 4px;
   }
   .card {
+    padding: 6px;
     width: 70vw;
     margin-bottom: 36px;
   }
