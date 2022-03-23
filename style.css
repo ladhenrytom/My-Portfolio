@@ -851,7 +851,8 @@ hr.footer-border {
     margin: 0 auto;
   }
   .main{
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .photo {
     margin: 0 auto;
@@ -1017,7 +1018,8 @@ hr.footer-border {
     margin: 0 auto;
   }
   .main{
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .photo {
     margin: 0 auto;
