@@ -718,7 +718,7 @@ hr.footer-border {
   }
   .hidden {
     display: block;
-    padding: 24px 10vw;
+    padding: 24px 5vw;
   }
   .card {
     width: 80vw;
@@ -881,7 +881,7 @@ hr.footer-border {
   }
   .hidden {
     display: block;
-    padding: 24px;
+    padding: 12px;
   }
   .card {
     width: 70vw;
