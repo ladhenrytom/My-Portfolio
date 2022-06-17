@@ -236,7 +236,7 @@ hr.nav {
 
 .card-img {
   position: absolute;
-  margin: 12px 24px;
+  margin: 12px 22px;
   width: 20vw;
   height: 23vh;
   border-radius: 8px;
@@ -247,7 +247,7 @@ hr.nav {
   height: 5vh;
   padding: 10px;
   font-size: 18px;
-  margin: 210px 12px;
+  margin: 212px 14px;
 }
 
 footer {
