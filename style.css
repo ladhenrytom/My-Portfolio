@@ -230,20 +230,20 @@ hr.nav {
   position: relative;
 }
 .card:hover {
-  width: 20.2vw;
-  height: 35.2vh;
+  width: 26vw;
+  height: 36vh;
 }
 
 .card-img {
   position: absolute;
   margin: 12px 24px;
-  width: 15vw;
-  height: 20vh;
+  width: 20vw;
+  height: 30vh;
   border-radius: 8px;
   object-fit: cover;
 }
 .project-btn {
-  width: 16vw;
+  width: 20vw;
   height: 5vh;
   padding: 10px;
   font-size: 18px;
